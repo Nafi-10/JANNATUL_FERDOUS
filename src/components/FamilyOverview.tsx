@@ -325,7 +325,7 @@ export const FamilyOverview: React.FC = () => {
               </div>
 
               {/* Interactive Lineage Filter Segmented Tabs */}
-              <div className="flex items-center gap-1.5 p-1.5 glossy-panel rounded-2xl border border-white/80 dark:border-white/10 self-start md:self-auto">
+              <div className="flex w-full max-w-full flex-wrap items-center gap-1.5 p-1.5 glossy-panel rounded-2xl border border-white/80 dark:border-white/10 self-start md:w-auto md:self-auto">
                 <button
                   onClick={() => setActiveTab('all')}
                   className={`px-3.5 py-2 text-xs font-semibold rounded-xl transition-all whitespace-nowrap ${
@@ -427,7 +427,7 @@ export const FamilyOverview: React.FC = () => {
               </div>
 
               {/* Filter Tabs for Vital Members */}
-              <div className="flex flex-wrap items-center gap-1.5 p-1.5 glossy-panel rounded-2xl border border-white/80 dark:border-white/10 self-start md:self-auto">
+              <div className="flex w-full max-w-full flex-wrap items-center gap-1.5 p-1.5 glossy-panel rounded-2xl border border-white/80 dark:border-white/10 self-start md:w-auto md:self-auto">
                 <button
                   onClick={() => setActiveVitalTab('all')}
                   className={`px-3 py-1.5 text-xs font-semibold rounded-xl transition-all whitespace-nowrap ${

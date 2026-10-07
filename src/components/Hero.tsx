@@ -12,7 +12,7 @@ export const Hero: React.FC<HeroProps> = () => {
   return (
     <section
       id="home"
-      className="relative min-h-screen pt-28 pb-16 lg:pt-36 lg:pb-24 flex items-center overflow-hidden bg-transparent"
+      className="relative min-h-screen pt-24 pb-12 sm:pt-28 sm:pb-16 lg:pt-36 lg:pb-24 flex items-center overflow-hidden bg-transparent"
     >
       {/* Background Soft Blurred Gradient Orbs */}
       <div
@@ -31,23 +31,24 @@ export const Hero: React.FC<HeroProps> = () => {
       {/* Ambient background orbs for smooth atmospheric depth */}
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full relative z-10">
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8 items-center">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 sm:gap-12 lg:gap-8 items-center">
           
           {/* Left Column: Headline, Bio, CTAs */}
-          <div className="lg:col-span-6 xl:col-span-6 space-y-7 text-left -translate-y-5 lg:-translate-y-8">
+          <div className="lg:col-span-6 xl:col-span-6 space-y-6 sm:space-y-7 text-left -translate-y-5 lg:-translate-y-8">
             <ScrollReveal direction="left" delay={40}>
-              <div className="space-y-7">
+              <div className="space-y-6 sm:space-y-7">
                 {/* Small Greeting Kicker */}
                 <div className="inline-flex items-center gap-2 text-xs font-semibold tracking-wider text-[#5C6280] dark:text-[#959EB9]">
                   <span>{PERSONAL_INFO.greeting}</span>
                 </div>
 
                 {/* Main Name Heading (Pixel match to ETHAN COLE in reference) */}
-                <h1 className="font-display text-5xl sm:text-6xl md:text-7xl font-extrabold tracking-tight leading-[1.05]">
-                  <span className="text-[#14172B] dark:text-white mr-3">
+                <h1 className="font-display text-4xl sm:text-6xl md:text-7xl font-extrabold tracking-tight leading-[1.05]">
+                  <span className="block sm:inline text-[#14172B] dark:text-white sm:mr-3">
                     {PERSONAL_INFO.firstName}
                   </span>
-                  <span className="text-[#3B5BFF] dark:text-[#4FD6D0] drop-shadow-sm">
+                  {' '}
+                  <span className="block sm:inline text-[#3B5BFF] dark:text-[#4FD6D0] drop-shadow-sm">
                     {PERSONAL_INFO.lastName}
                   </span>
                 </h1>

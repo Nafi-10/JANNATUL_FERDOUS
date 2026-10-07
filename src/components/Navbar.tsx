@@ -56,7 +56,7 @@ export const Navbar: React.FC<NavbarProps> = ({ activeSection }) => {
           </a>
 
           {/* Zone 2: Navigation Links (Desktop) */}
-          <nav className="hidden md:flex items-center gap-8 text-xs font-semibold tracking-widest text-[#5C6280] dark:text-[#959EB9]">
+          <nav className="hidden xl:flex items-center gap-8 text-xs font-semibold tracking-widest text-[#5C6280] dark:text-[#959EB9]">
             {navLinks.map((link) => {
               const isActive = activeSection === link.href.substring(1);
               return (
@@ -77,7 +77,7 @@ export const Navbar: React.FC<NavbarProps> = ({ activeSection }) => {
           </nav>
 
           {/* Zone 3: Gallery Action */}
-          <div className="hidden sm:flex items-center gap-4">
+          <div className="hidden xl:flex items-center gap-4">
             <a
               href="#family-gallery"
               className="px-5 py-2.5 text-xs font-semibold tracking-wider text-[#3B5BFF] dark:text-[#4FD6D0] border border-[#3B5BFF]/40 dark:border-[#4FD6D0]/40 rounded-xl hover:bg-[#3B5BFF]/5 dark:hover:bg-[#4FD6D0]/10 transition-all flex items-center gap-2 group shadow-sm hover:shadow-md hover:shadow-[#3B5BFF]/10"
@@ -89,7 +89,7 @@ export const Navbar: React.FC<NavbarProps> = ({ activeSection }) => {
           </div>
 
           {/* Mobile Menu */}
-          <div className="flex sm:hidden items-center gap-2">
+          <div className="flex xl:hidden items-center gap-2">
             <button
               onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
               className="w-9 h-9 rounded-lg flex items-center justify-center text-[#14172B] dark:text-white border border-white/60 dark:border-white/10 bg-white/50 dark:bg-white/5"
@@ -102,7 +102,7 @@ export const Navbar: React.FC<NavbarProps> = ({ activeSection }) => {
 
         {/* Mobile Dropdown Menu */}
         {mobileMenuOpen && (
-          <div className="sm:hidden mt-3 p-4 glossy-panel space-y-3 animate-in fade-in slide-in-from-top-2 duration-200">
+          <div className="xl:hidden mt-3 p-4 glossy-panel space-y-3 animate-in fade-in slide-in-from-top-2 duration-200">
             <nav className="flex flex-col gap-2.5">
               {navLinks.map((link) => (
                 <a
