@@ -67,7 +67,7 @@ export const FamilyOverview: React.FC = () => {
       generation: 'grandparents',
       roleType: 'grandparent',
       badgeCode: 'PGF',
-      name: 'Late Mr. Musnim Uddin',
+      name: 'Late Musllim Uddin',
       relation: 'Paternal Grandfather',
       bengaliTitle: 'Dada',
       profession: 'Teacher',
@@ -80,7 +80,7 @@ export const FamilyOverview: React.FC = () => {
       generation: 'grandparents',
       roleType: 'grandparent',
       badgeCode: 'PGM',
-      name: 'Late Mrs. Subaiya Begum',
+      name: 'Late Suraiya Khatun',
       relation: 'Paternal Grandmother',
       bengaliTitle: 'Dadi',
       profession: 'Homemaker',
@@ -520,7 +520,7 @@ export const FamilyOverview: React.FC = () => {
                   Overall Family Member Overview
                 </h2>
                 <p className="text-sm sm:text-base text-[#5C6280] dark:text-[#959EB9] leading-relaxed">
-                  An intuitive, creative genealogical presentation honoring the direct ancestry of Jannatul Ferdous. Explore the dual ancestral pillars — the Musnim Uddin and Khan Solaiman Hossain dynasties — across generations with connected in-law distinctions.
+                  An intuitive, creative genealogical presentation honoring the direct ancestry of Jannatul Ferdous. Explore the dual ancestral pillars — the Musllim Uddin and Khan Solaiman Hossain dynasties — across generations with connected in-law distinctions.
                 </p>
               </div>
 
@@ -602,7 +602,7 @@ export const FamilyOverview: React.FC = () => {
                   </span>
                 </div>
                 <h4 className="font-display text-sm sm:text-base font-bold text-[#14172B] dark:text-white group-hover:text-[#3B5BFF] dark:group-hover:text-[#4FD6D0] transition-colors truncate">
-                  Musnim Uddin Lineage
+                  Musllim Uddin Lineage
                 </h4>
                 <p className="text-[11px] text-[#5C6280] dark:text-[#959EB9] mt-0.5 truncate">
                   Dada, Dadi · 1 Chacha · 5 Fupus
@@ -797,7 +797,7 @@ export const FamilyOverview: React.FC = () => {
                               {m.profession}
                             </p>
                             <span className="text-[11px] font-medium text-[#5C6280] dark:text-[#959EB9] block mt-0.5">
-                              {m.side === 'paternal' ? 'Musnim Uddin Dynasty · Paternal Line' : 'Solaiman Hossain Dynasty · Maternal Line'}
+                              {m.side === 'paternal' ? 'Musllim Uddin Dynasty · Paternal Line' : 'Solaiman Hossain Dynasty · Maternal Line'}
                             </span>
                           </div>
 
@@ -847,7 +847,7 @@ export const FamilyOverview: React.FC = () => {
                           Direct Paternal Lineage
                         </span>
                         <h3 className="font-display text-xl sm:text-2xl font-bold text-[#14172B] dark:text-white">
-                          Musnim Uddin Dynasty
+                          Musllim Uddin Dynasty
                         </h3>
                         <p className="text-xs text-[#5C6280] dark:text-[#959EB9]">
                           8 Direct Bloodline Members · 1 Son + 5 Daughters
@@ -1386,7 +1386,7 @@ export const FamilyOverview: React.FC = () => {
                   {selectedMember.name}
                 </h3>
                 <p className="text-xs font-semibold text-[#5C6280] dark:text-[#959EB9]">
-                  {'side' in selectedMember ? `${selectedMember.side === 'paternal' ? 'Musnim Uddin Dynasty (Paternal)' : 'Solaiman Hossain Dynasty (Maternal)'}` : selectedMember.categoryLabel}
+                  {'side' in selectedMember ? `${selectedMember.side === 'paternal' ? 'Musllim Uddin Dynasty (Paternal)' : 'Solaiman Hossain Dynasty (Maternal)'}` : selectedMember.categoryLabel}
                 </p>
               </div>
             </div>
