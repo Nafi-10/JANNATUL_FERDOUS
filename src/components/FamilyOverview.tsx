@@ -338,15 +338,15 @@ export const FamilyOverview: React.FC = () => {
       locationOrCompany: 'Orion Group',
     },
 
-    // Maternal Uncles (Mama)
+    // Maternal Uncles (Nanu)
     {
       id: 'vital-mu-1',
       category: 'maternal-uncles',
-      categoryLabel: 'Maternal Uncle',
+      categoryLabel: 'Nanu',
       badgeCode: 'MU1',
       name: 'Harun-ar-Rashid',
-      honoraryTitle: 'Maternal Uncle (Mama)',
-      relationOrSpouse: 'Maternal Uncle',
+      honoraryTitle: 'Nanu',
+      relationOrSpouse: 'Nanu',
       profession: 'Businessman',
       fieldCategory: 'business',
       detail: 'Respected maternal uncle engaged in commercial enterprises and business development.',
@@ -355,11 +355,11 @@ export const FamilyOverview: React.FC = () => {
     {
       id: 'vital-mu-2',
       category: 'maternal-uncles',
-      categoryLabel: 'Maternal Uncle',
+      categoryLabel: 'Nanu',
       badgeCode: 'MU2',
       name: 'Masud Khan',
-      honoraryTitle: 'Maternal Uncle (Mama)',
-      relationOrSpouse: 'Maternal Uncle',
+      honoraryTitle: 'Nanu',
+      relationOrSpouse: 'Nanu',
       profession: 'Resides in the USA',
       fieldCategory: 'global',
       detail: 'Maternal uncle residing in the United States, fostering international family linkages and global perspectives.',
@@ -1222,14 +1222,14 @@ export const FamilyOverview: React.FC = () => {
               </div>
             )}
 
-            {/* GROUP 2: MATERNAL UNCLES (MAMA) */}
+            {/* GROUP 2: MATERNAL UNCLES (NANU) */}
             {(activeVitalTab === 'all' || activeVitalTab === 'maternal-uncles') && (
               <div className="space-y-4">
                 <div className="flex items-center justify-between pb-2 border-b border-slate-200/60 dark:border-white/10">
                   <div className="flex items-center gap-2">
                     <span className="w-2.5 h-2.5 rounded-full bg-[#7A5CFF]" />
                     <h4 className="font-display text-lg font-bold text-[#14172B] dark:text-white">
-                      Maternal Uncles (Mama)
+                      Maternal Uncles (Nanu)
                     </h4>
                   </div>
                   <span className="text-xs font-semibold text-[#5C6280] dark:text-[#959EB9]">
@@ -1249,7 +1249,6 @@ export const FamilyOverview: React.FC = () => {
                           <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-xl text-xs font-bold tracking-wide bg-[#7A5CFF]/10 text-[#7A5CFF] dark:text-[#4FD6D0] border border-[#7A5CFF]/20 shadow-xs">
                             <Sparkles className="w-3.5 h-3.5 text-amber-500 animate-spin-slow shrink-0" />
                             <span className="font-extrabold uppercase">{uncle.relationOrSpouse}</span>
-                            <span className="text-[10px] font-medium opacity-80">· Mama</span>
                           </div>
                           <div className="w-8 h-8 rounded-lg bg-slate-100 dark:bg-white/10 flex items-center justify-center shrink-0">
                             {getFieldIcon(uncle.fieldCategory)}
