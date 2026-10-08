@@ -602,7 +602,7 @@ export const FamilyOverview: React.FC = () => {
                   </span>
                 </div>
                 <h4 className="font-display text-sm sm:text-base font-bold text-[#14172B] dark:text-white group-hover:text-[#3B5BFF] dark:group-hover:text-[#4FD6D0] transition-colors truncate">
-                  Musllim Uddin Lineage
+                  Musllim Uddin
                 </h4>
                 <p className="text-[11px] text-[#5C6280] dark:text-[#959EB9] mt-0.5 truncate">
                   Dada, Dadi · 1 Chacha · 5 Fupus
