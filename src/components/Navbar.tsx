@@ -1,13 +1,14 @@
 import React, { useState, useEffect } from 'react';
-import { ArrowRight, Menu, X } from 'lucide-react';
+import { ArrowRight, Menu, X, Sparkles } from 'lucide-react';
 import { PERSONAL_INFO } from '../data/portfolioData';
 import portfolioLogo from '../assets/images/logo-transparent.png';
 
 interface NavbarProps {
   activeSection: string;
+  onReplayIntro?: () => void;
 }
 
-export const Navbar: React.FC<NavbarProps> = ({ activeSection }) => {
+export const Navbar: React.FC<NavbarProps> = ({ activeSection, onReplayIntro }) => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
@@ -80,10 +81,11 @@ export const Navbar: React.FC<NavbarProps> = ({ activeSection }) => {
           <div className="hidden xl:flex items-center gap-4">
             <a
               href="#family-gallery"
-              className="px-5 py-2.5 text-xs font-semibold tracking-wider text-[#3B5BFF] dark:text-[#4FD6D0] border border-[#3B5BFF]/40 dark:border-[#4FD6D0]/40 rounded-xl hover:bg-[#3B5BFF]/5 dark:hover:bg-[#4FD6D0]/10 transition-all flex items-center gap-2 group shadow-sm hover:shadow-md hover:shadow-[#3B5BFF]/10"
+              className="px-5 py-2.5 text-xs font-semibold tracking-wider text-[#3B5BFF] dark:text-[#4FD6D0] border border-[#3B5BFF]/40 dark:border-[#4FD6D0]/40 rounded-xl hover:bg-[#3B5BFF]/5 dark:hover:bg-[#4FD6D0]/10 transition-all flex items-center gap-2 group shadow-sm hover:shadow-md hover:shadow-[#3B5BFF]/10 cursor-pointer"
             >
+              <Sparkles className="w-3.5 h-3.5 text-amber-500 animate-spin-slow" />
               <span>PHOTO GALLERY</span>
-              <ArrowRight className="w-3.5 h-3.5 group-hover:translate-x-1 transition-transform" />
+              <ArrowRight className="w-3.5 h-3.5 group-hover:translate-x-1 transition-transform animate-pulse-subtle" />
             </a>
 
           </div>

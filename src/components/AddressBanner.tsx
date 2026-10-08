@@ -23,7 +23,7 @@ export const AddressBanner: React.FC = () => {
           <div className="flex items-center gap-4">
             {/* Rounded Badge Box (Matches the blue-framed square badge in the screenshot) */}
             <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-[#3B5BFF]/10 to-[#4FD6D0]/10 dark:from-[#3B5BFF]/20 dark:to-[#4FD6D0]/20 border border-[#3B5BFF]/30 dark:border-[#4FD6D0]/30 flex items-center justify-center font-display font-bold text-xs tracking-wider text-[#3B5BFF] dark:text-[#4FD6D0] shrink-0 group-hover:scale-105 transition-transform shadow-sm">
-              <MapPin className="w-5 h-5 text-[#3B5BFF] dark:text-[#4FD6D0]" />
+              <MapPin className="w-5 h-5 text-[#3B5BFF] dark:text-[#4FD6D0] animate-bounce-subtle" />
             </div>
 
             <div className="space-y-0.5">

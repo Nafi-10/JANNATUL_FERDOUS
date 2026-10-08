@@ -92,7 +92,7 @@ export const Education: React.FC = () => {
         <ScrollReveal direction="up" delay={40}>
           <div className="text-center max-w-2xl mx-auto mb-12 space-y-3">
             <div className="inline-flex items-center justify-center gap-2 text-xs font-semibold tracking-widest text-[#3B5BFF] dark:text-[#4FD6D0] uppercase">
-              <GraduationCap className="w-3.5 h-3.5" />
+              <GraduationCap className="w-3.5 h-3.5 text-[#3B5BFF] dark:text-[#4FD6D0] animate-bounce-subtle" />
               <span>Academic Milestones</span>
             </div>
             <h2 className="font-display text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight text-[#14172B] dark:text-white">

@@ -1,6 +1,7 @@
 import React from 'react';
-import { GraduationCap, Award, BookOpen, Sparkles, ArrowUpRight, CheckCircle2 } from 'lucide-react';
+import { GraduationCap, Award, BookOpen, Sparkles, ArrowUpRight, CheckCircle2, Download } from 'lucide-react';
 import { ACADEMIC_STATS } from '../data/portfolioData';
+import { downloadBioData } from '../utils/downloadBioData';
 
 export const About: React.FC = () => {
   const highlights = [
@@ -91,13 +92,24 @@ export const About: React.FC = () => {
                 </div>
               </div>
 
-              <a
-                href="#contact"
-                className="inline-flex items-center gap-1.5 text-xs font-bold text-[#3B5BFF] dark:text-[#4FD6D0] hover:underline"
-              >
-                <span>Request Full Academic Transcript</span>
-                <ArrowUpRight className="w-3.5 h-3.5" />
-              </a>
+              <div className="flex flex-wrap items-center gap-4">
+                <button
+                  type="button"
+                  onClick={downloadBioData}
+                  className="glossy-btn-primary inline-flex items-center gap-2 px-4 py-2.5 text-xs font-bold cursor-pointer"
+                >
+                  <span>Download Bio-Data PDF</span>
+                  <Download className="w-4 h-4" />
+                </button>
+
+                <a
+                  href="#contact"
+                  className="inline-flex items-center gap-1.5 text-xs font-bold text-[#3B5BFF] dark:text-[#4FD6D0] hover:underline"
+                >
+                  <span>Request Full Academic Transcript</span>
+                  <ArrowUpRight className="w-3.5 h-3.5" />
+                </a>
+              </div>
             </div>
           </div>
 

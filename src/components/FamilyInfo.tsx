@@ -40,7 +40,7 @@ export const FamilyInfo: React.FC = () => {
       ],
       quote:
         '“His discipline, kindness, and dedication to service continue to guide his family.”',
-      icon: <Shield className="w-5 h-5 text-[#3B5BFF] dark:text-[#4FD6D0]" />,
+      icon: <Shield className="w-5 h-5 text-[#3B5BFF] dark:text-[#4FD6D0] animate-pulse-subtle" />,
     },
     {
       id: 'mother',
@@ -58,7 +58,7 @@ export const FamilyInfo: React.FC = () => {
       ],
       quote:
         '“Her steady care and unconditional support are a source of strength for our family.”',
-      icon: <Heart className="w-5 h-5 text-[#3B5BFF] dark:text-[#4FD6D0]" />,
+      icon: <Heart className="w-5 h-5 text-rose-500 animate-bounce-subtle" />,
     },
     {
       id: 'brother',
@@ -72,7 +72,7 @@ export const FamilyInfo: React.FC = () => {
       interests: ['IoT with AI', 'Critical Problem Solving', 'Playing Football'],
       quote:
         "“Love yourself, Be yourself. No one's gonna pay your bill's ( Peace)”",
-      icon: <Compass className="w-5 h-5 text-[#3B5BFF] dark:text-[#4FD6D0]" />,
+      icon: <Compass className="w-5 h-5 text-[#3B5BFF] dark:text-[#4FD6D0] animate-spin-slow" />,
       links: [
         { label: 'Facebook', href: 'https://www.facebook.com/jawadul.islam.14490/' },
         { label: 'LinkedIn', href: 'https://www.linkedin.com/in/kazi-jawadul-islam' },
@@ -99,7 +99,7 @@ export const FamilyInfo: React.FC = () => {
         <ScrollReveal direction="up" delay={40}>
           <div className="text-center max-w-2xl mx-auto mb-12 space-y-3">
             <div className="inline-flex items-center justify-center gap-2 text-xs font-semibold tracking-widest text-[#3B5BFF] dark:text-[#4FD6D0] uppercase">
-              <Users className="w-3.5 h-3.5" />
+              <Users className="w-3.5 h-3.5 text-[#3B5BFF] dark:text-[#4FD6D0] animate-bounce-subtle" />
               <span>Support System &amp; Roots</span>
             </div>
             <h2 className="font-display text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight text-[#14172B] dark:text-white">

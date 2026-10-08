@@ -53,6 +53,10 @@
   h1, h2, h3, h4, .font-display {
     font-family: 'Outfit', 'Plus Jakarta Sans', sans-serif;
   }
+
+  .font-arabic {
+    font-family: 'Noto Naskh Arabic', serif;
+  }
 }
 
 /* Glossy Surface System */
@@ -203,4 +207,167 @@
 }
 ::-webkit-scrollbar-thumb:hover {
   background: rgba(59, 91, 255, 0.45);
+}
+
+/* Loading Screen Aurora Animations */
+@keyframes aurora-spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+@keyframes logo-spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+@keyframes pulse-glow {
+  0%, 100% { opacity: 0.35; transform: scale(1); }
+  50% { opacity: 0.75; transform: scale(1.08); }
+}
+
+@keyframes shimmer {
+  0% { transform: translateX(-100%); }
+  100% { transform: translateX(200%); }
+}
+
+.animate-aurora-spin {
+  animation: aurora-spin 8s linear infinite;
+}
+
+.animate-logo-spin {
+  animation: logo-spin 24s linear infinite;
+}
+
+.animate-pulse-glow {
+  animation: pulse-glow 4s ease-in-out infinite;
+}
+
+.animate-shimmer {
+  animation: shimmer 1.8s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .animate-logo-spin {
+    animation: none;
+  }
+}
+
+/* Animated Family Tree Flow */
+@keyframes tree-flow {
+  from {
+    stroke-dashoffset: 60;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes node-breathe {
+  0%, 100% {
+    transform: scale(1);
+    box-shadow: 0 0 15px rgba(59, 91, 255, 0.2);
+  }
+  50% {
+    transform: scale(1.03);
+    box-shadow: 0 0 25px rgba(59, 91, 255, 0.45);
+  }
+}
+
+.animate-tree-flow {
+  stroke-dasharray: 6 4;
+  animation: tree-flow 2.5s linear infinite;
+}
+
+.animate-node-breathe {
+  animation: node-breathe 4s ease-in-out infinite;
+}
+
+@keyframes branch-glow {
+  0%, 100% {
+    opacity: 0.65;
+    filter: drop-shadow(0 0 3px rgba(59, 91, 255, 0.4));
+  }
+  50% {
+    opacity: 1;
+    filter: drop-shadow(0 0 9px rgba(79, 214, 208, 0.8));
+  }
+}
+
+.animate-branch-glow {
+  animation: branch-glow 3s ease-in-out infinite;
+}
+
+@keyframes pulse-beam {
+  0% {
+    transform: scale(0.96);
+    opacity: 0.7;
+  }
+  50% {
+    transform: scale(1.04);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(0.96);
+    opacity: 0.7;
+  }
+}
+
+.animate-pulse-beam {
+  animation: pulse-beam 2.4s ease-in-out infinite;
+}
+
+/* Beautiful Animated Icons System */
+@keyframes spin-slow {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+@keyframes spin-slow-reverse {
+  from { transform: rotate(360deg); }
+  to { transform: rotate(0deg); }
+}
+
+@keyframes bounce-subtle {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-3px); }
+}
+
+@keyframes float-gentle {
+  0%, 100% { transform: translateY(0px) rotate(0deg); }
+  50% { transform: translateY(-4px) rotate(2deg); }
+}
+
+@keyframes pulse-subtle {
+  0%, 100% { transform: scale(1); opacity: 1; }
+  50% { transform: scale(1.1); opacity: 0.85; }
+}
+
+@keyframes icon-shimmer {
+  0% { filter: drop-shadow(0 0 2px rgba(59, 91, 255, 0.3)); }
+  50% { filter: drop-shadow(0 0 8px rgba(79, 214, 208, 0.7)); }
+  100% { filter: drop-shadow(0 0 2px rgba(59, 91, 255, 0.3)); }
+}
+
+.animate-spin-slow {
+  animation: spin-slow 12s linear infinite;
+}
+
+.animate-spin-slow-reverse {
+  animation: spin-slow-reverse 14s linear infinite;
+}
+
+.animate-bounce-subtle {
+  animation: bounce-subtle 2.5s ease-in-out infinite;
+}
+
+.animate-float-gentle {
+  animation: float-gentle 3.5s ease-in-out infinite;
+}
+
+.animate-pulse-subtle {
+  animation: pulse-subtle 2.2s ease-in-out infinite;
+}
+
+.icon-animated-glow {
+  animation: icon-shimmer 3s ease-in-out infinite;
 }

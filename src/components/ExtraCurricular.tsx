@@ -27,7 +27,7 @@ export const ExtraCurricular: React.FC = () => {
       category: 'Practical Life Skills',
       description: 'Comprehensive automotive driving course adhering to rigorous military school standards, focusing on road discipline, defensive maneuvering, and vehicle maintenance.',
       skills: ['Defensive Driving', 'Traffic Regulations', 'Emergency Handling', 'Road Safety'],
-      icon: <Car className="w-5 h-5 text-[#3B5BFF] dark:text-[#4FD6D0]" />,
+      icon: <Car className="w-5 h-5 text-[#3B5BFF] dark:text-[#4FD6D0] animate-float-gentle" />,
     },
     {
       id: 'rcrc',
@@ -38,7 +38,7 @@ export const ExtraCurricular: React.FC = () => {
       category: 'Humanitarian & First Aid',
       description: 'Certified first responder training covering triage protocols, CPR, wound dressing, trauma management, and humanitarian relief principles.',
       skills: ['Emergency First Aid', 'CPR Certification', 'Disaster Relief', 'Humanitarian Service'],
-      icon: <HeartPulse className="w-5 h-5 text-[#3B5BFF] dark:text-[#4FD6D0]" />,
+      icon: <HeartPulse className="w-5 h-5 text-rose-500 animate-pulse-subtle" />,
     },
     {
       id: 'computer',
@@ -49,7 +49,7 @@ export const ExtraCurricular: React.FC = () => {
       category: 'Technical Certification',
       description: 'Government certified vocational computing program administered by BTEB Dhaka, strengthening core software toolsets, documentation systems, and digital literacy.',
       skills: ['Operating Systems', 'Office Suites', 'BTEB Certified', 'Digital Workflows'],
-      icon: <Laptop className="w-5 h-5 text-[#3B5BFF] dark:text-[#4FD6D0]" />,
+      icon: <Laptop className="w-5 h-5 text-[#3B5BFF] dark:text-[#4FD6D0] animate-bounce-subtle" />,
     },
     {
       id: 'singing',
@@ -60,7 +60,7 @@ export const ExtraCurricular: React.FC = () => {
       category: 'Cultural & Performing Arts',
       description: 'Disciplined classical vocal training in Robindro Shongit (Rabindra Sangeet), cultivating tonal nuance, lyrical emotion, breathing control, and artistic discipline.',
       skills: ['Classical Vocalism', 'Tagore Literature', 'Melodic Ragas', 'Stage Performance'],
-      icon: <Music className="w-5 h-5 text-[#3B5BFF] dark:text-[#4FD6D0]" />,
+      icon: <Music className="w-5 h-5 text-[#7A5CFF] animate-spin-slow" />,
     },
   ];
 
@@ -82,7 +82,7 @@ export const ExtraCurricular: React.FC = () => {
         <ScrollReveal direction="up" delay={40}>
           <div className="text-center max-w-2xl mx-auto mb-12 space-y-3">
             <div className="inline-flex items-center justify-center gap-2 text-xs font-semibold tracking-widest text-[#3B5BFF] dark:text-[#4FD6D0] uppercase">
-              <Sparkles className="w-3.5 h-3.5" />
+              <Sparkles className="w-3.5 h-3.5 text-amber-500 animate-spin-slow" />
               <span>Beyond The Classroom</span>
             </div>
             <h2 className="font-display text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight text-[#14172B] dark:text-white">

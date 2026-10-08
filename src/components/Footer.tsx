@@ -1,9 +1,13 @@
 import React from 'react';
-import { ArrowUp } from 'lucide-react';
+import { ArrowUp, Sparkles } from 'lucide-react';
 import { PERSONAL_INFO } from '../data/portfolioData';
 import portfolioLogo from '../assets/images/logo-transparent.png';
 
-export const Footer: React.FC = () => {
+interface FooterProps {
+  onReplayIntro?: () => void;
+}
+
+export const Footer: React.FC<FooterProps> = ({ onReplayIntro }) => {
   const scrollToTop = () => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
   };
@@ -38,16 +42,26 @@ export const Footer: React.FC = () => {
             <a href="#extra-curricular" className="hover:text-white transition-colors">ACTIVITIES</a>
             <a href="#family-overview" className="hover:text-white transition-colors">LINEAGE</a>
             <a href="#family-gallery" className="hover:text-[#4FD6D0] transition-colors">GALLERY</a>
+            {onReplayIntro && (
+              <button
+                onClick={onReplayIntro}
+                className="hover:text-white transition-colors flex items-center gap-1.5 cursor-pointer text-[#4FD6D0]"
+                title="Replay introductory loading screen"
+              >
+                <Sparkles className="w-3.5 h-3.5 text-amber-400 animate-spin-slow" />
+                <span>REPLAY INTRO</span>
+              </button>
+            )}
           </nav>
 
           {/* Back to Top */}
           <div className="flex items-center gap-4">
             <button
               onClick={scrollToTop}
-              className="w-10 h-10 rounded-xl bg-gradient-to-br from-[#3B5BFF] to-[#7A5CFF] text-white flex items-center justify-center hover:scale-105 transition-all shadow-md shadow-[#3B5BFF]/30 ml-2"
+              className="w-10 h-10 rounded-xl bg-gradient-to-br from-[#3B5BFF] to-[#7A5CFF] text-white flex items-center justify-center hover:scale-105 transition-all shadow-md shadow-[#3B5BFF]/30 ml-2 cursor-pointer"
               aria-label="Scroll to top of page"
             >
-              <ArrowUp className="w-4 h-4" />
+              <ArrowUp className="w-4 h-4 animate-bounce-subtle" />
             </button>
           </div>
 

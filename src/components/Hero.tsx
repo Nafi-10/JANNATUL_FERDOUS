@@ -1,5 +1,5 @@
 import React from 'react';
-import { Download } from 'lucide-react';
+import { Download, Sparkles } from 'lucide-react';
 import { PERSONAL_INFO, PORTRAIT_IMAGE } from '../data/portfolioData';
 import { ScrollReveal } from './ScrollReveal';
 import { downloadBioData } from '../utils/downloadBioData';
@@ -38,7 +38,8 @@ export const Hero: React.FC<HeroProps> = () => {
             <ScrollReveal direction="left" delay={40}>
               <div className="space-y-6 sm:space-y-7">
                 {/* Small Greeting Kicker */}
-                <div className="inline-flex items-center gap-2 text-xs font-semibold tracking-wider text-[#5C6280] dark:text-[#959EB9]">
+                <div className="inline-flex items-center gap-2 text-xs font-semibold tracking-wider text-[#5C6280] dark:text-[#959EB9] px-3 py-1 rounded-full bg-white/60 dark:bg-white/5 border border-white/60 dark:border-white/10 w-fit backdrop-blur-sm shadow-2xs">
+                  <Sparkles className="w-3.5 h-3.5 text-amber-500 animate-spin-slow" />
                   <span>{PERSONAL_INFO.greeting}</span>
                 </div>
 
@@ -76,10 +77,10 @@ export const Hero: React.FC<HeroProps> = () => {
                   <button
                     type="button"
                     onClick={downloadBioData}
-                    className="glossy-btn-primary px-7 py-3.5 text-xs sm:text-sm font-semibold tracking-wider flex items-center gap-2.5 group"
+                    className="glossy-btn-primary px-7 py-3.5 text-xs sm:text-sm font-semibold tracking-wider flex items-center gap-2.5 group cursor-pointer"
                   >
                     <span>DOWNLOAD BIO-DATA</span>
-                    <Download className="w-4 h-4 group-hover:translate-y-0.5 transition-transform" />
+                    <Download className="w-4 h-4 animate-bounce-subtle" />
                   </button>
 
                 </div>

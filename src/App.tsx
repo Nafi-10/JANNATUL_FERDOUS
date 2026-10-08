@@ -10,8 +10,10 @@ import { FamilyOverview } from './components/FamilyOverview';
 import { FamilyGallery } from './components/FamilyGallery';
 import { Footer } from './components/Footer';
 import { ScrollProgressLine } from './components/ScrollProgressLine';
+import { LoadingScreen } from './components/LoadingScreen';
 
 export default function App() {
+  const [isLoading, setIsLoading] = useState<boolean>(true);
   const [darkMode, setDarkMode] = useState<boolean>(() => {
     if (typeof window !== 'undefined') {
       const saved = localStorage.getItem('theme');
@@ -66,11 +68,16 @@ export default function App() {
 
   return (
     <div className="min-h-screen bg-pearl-wash text-[#14172B] dark:text-[#F3F4F8] transition-colors duration-300 relative">
+      {/* Attractive Intro Loading Screen */}
+      {isLoading && (
+        <LoadingScreen onComplete={() => setIsLoading(false)} />
+      )}
+
       {/* Scroll Progress Length Indicator Line */}
       <ScrollProgressLine />
 
       {/* Top Navbar */}
-      <Navbar activeSection={activeSection} />
+      <Navbar activeSection={activeSection} onReplayIntro={() => setIsLoading(true)} />
 
       {/* Main Single-Page Sections */}
       <main>
@@ -85,7 +92,7 @@ export default function App() {
       </main>
 
       {/* Footer */}
-      <Footer />
+      <Footer onReplayIntro={() => setIsLoading(true)} />
     </div>
   );
 }
