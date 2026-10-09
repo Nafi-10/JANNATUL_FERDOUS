@@ -18,14 +18,14 @@ export const PersonalDetails: React.FC = () => {
     {
       id: 'dob',
       title: 'Date of Birth',
-      subtitle: '21 November 2007',
-      primaryValue: '21 November 2007',
+      subtitle: '21 November 2005',
+      primaryValue: '21 November 2005',
       secondaryValue: 'Scorpio · Gen-Z Technologist',
       icon: <Calendar className="w-5 h-5 text-[#3B5BFF] dark:text-[#4FD6D0] animate-pulse-subtle" />,
       stats: [
         { label: 'Day', value: '21' },
         { label: 'Month', value: 'November' },
-        { label: 'Year', value: '2007' },
+        { label: 'Year', value: '2005' },
       ],
     },
     {
